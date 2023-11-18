@@ -9,9 +9,9 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './assets/project-1.jpeg';
-import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpeg';
+import Work1 from './assets/project1.png';
+import Work2 from './assets/project2.png';
+import Work3 from './assets/project3.png';
 import Work4 from './assets/project-4.jpeg';
 import Work5 from './assets/project-5.jpg';
 import Work6 from './assets/project-6.jpg';
@@ -275,7 +275,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: '<a href="https://snapgram-woad.vercel.app/" target="_blank">Click me!</a>',
       },
     ],
   },
@@ -303,7 +303,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: '<a href="https://luka-stefanovic.developerakademie.net/el%20pollo%20loco/index.html" target="_blank">Click me!</a>',
       },
     ],
   },
@@ -331,7 +331,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: '<a href="https://luka-stefanovic.developerakademie.net/join-main/index.html" target="_blank">Click me!</a>',
       },
     ],
   },
@@ -359,7 +359,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: '<a href="https://luka-stefanovic.developerakademie.net/quizapp/index.html" target="_blank">Click me!</a>',
       },
     ],
   },
