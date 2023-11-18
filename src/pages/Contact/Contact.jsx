@@ -1,4 +1,6 @@
 import React from 'react'
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import {
   FaEnvelopeOpen,
@@ -12,6 +14,21 @@ import { FiSend } from 'react-icons/fi';
 import "./contact.css"
 
 const Contact = () => {
+
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_3g6syva', 'template_4fe49q2', form.current, 'bin5GxQVtyxvlXxXK')
+      .then((result) => {
+        alert("Email successfully sent!");
+      }, (error) => {
+        alert("Something went wrong!");
+      });
+      e.target.reset();
+  };
+
   return (
     <section className="contact section">
       <h2 className="section__title">
@@ -64,13 +81,15 @@ const Contact = () => {
 
         </div>
 
-        <form className="contact__form">
+        <form ref={form} onSubmit={sendEmail} className="contact__form">
           <div className="form__input-group">
             <div className="form__input-div">
               <input
                 type="text"
                 placeholder="Your Name"
-                className="form__control" 
+                className="form__control"
+                name="user_name"
+                required
               />
             </div>
 
@@ -79,6 +98,8 @@ const Contact = () => {
                 type="email"
                 placeholder="Your E-mail"
                 className="form__control" 
+                name="user_email"
+                required
               />
             </div>
 
@@ -86,7 +107,9 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Your Subject"
-                className="form__control" 
+                className="form__control"
+                name="subject"
+                required
               />
             </div>
           </div>
@@ -94,7 +117,9 @@ const Contact = () => {
           <div className="form__input-div">
               <textarea 
                 placeholder="Your Message"
-                className="form__control textarea">
+                className="form__control textarea"
+                name="message"
+              >
               </textarea>
           </div>
 
