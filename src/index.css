@@ -155,6 +155,10 @@
         margin-top: auto;
     }
 
+    .home__title br {
+        display: none;
+    }
+
     .home__content {
         max-width: 500px;
         text-align: center;

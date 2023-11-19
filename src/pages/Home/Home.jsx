@@ -2,9 +2,17 @@ import React from 'react';
 import Profile from "../../assets/home.jpg";
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa";
-import "./home.css"
+import "./home.css";
+import { useTypewriter, Cursor} from 'react-simple-typewriter';
 
 const Home = () => {
+
+  const [text] = useTypewriter({
+    words: ['Web Developer', 'Designer', 'Music Producer'],
+    loop: 0,
+    delaySpeed: 2000
+  })
+
   return (
     <section className="home section grid">
       <img src={Profile} alt="" className="home__img"/>
@@ -12,7 +20,8 @@ const Home = () => {
       <div className="home__content">
         <div className="home__data">
           <h1 className="home__title">
-            <span>I'm Luka Stefanovic.</span> Web Developer
+            <span>I'm Luka Stefanovic.</span> <br /> {text}
+            <Cursor/>
           </h1>
 
           <p className="home__description">
