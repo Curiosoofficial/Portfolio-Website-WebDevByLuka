@@ -170,7 +170,7 @@ export const resume = [
     icon: <FaBriefcase />,
     year: '2021 - 2022',
     title: 'Freelance <span> Fiverr </span>',
-    desc: 'Provided freelance services on Fiverr, offering expertise in Music and Graphic design projects and tasks.',
+    desc: 'Provided freelance services on Fiverr, offering expertise in music and graphic design projects and tasks.',
   },
 
   {
