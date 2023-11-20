@@ -58,3 +58,8 @@
     left: -83%;
     transform: rotate(-15deg);
 }
+
+.cursor__animation {
+    display: flex;
+    flex-direction: row;
+}

@@ -12,6 +12,7 @@ import {
 
 import { FiSend } from 'react-icons/fi';
 import "./contact.css"
+import { motion } from "framer-motion"
 
 const Contact = () => {
 
@@ -30,7 +31,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact section">
+    <motion.section className="contact section"
+      animate={{ opacity: 1 }}
+      initial={{opacity: 0}}
+      transition={{ delay: 0.3 }}
+    >
       <h2 className="section__title">
         Get in <span>Touch</span>
       </h2>
@@ -49,7 +54,7 @@ const Contact = () => {
 
               <div>
                 <span className="info__title">Mail me</span>
-                <h4 className="info__desc">example@email.com</h4>
+                <h4 className="info__desc">contact@stefanovic.com</h4>
               </div>
             </div>
 
@@ -132,7 +137,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

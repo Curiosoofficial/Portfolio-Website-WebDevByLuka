@@ -7,11 +7,16 @@ import Skills from '../../components/Skills';
 import { resume } from '../../data'; 
 import ResumeItem from '../../components/ResumeItem';
 import "./about.css";
+import { motion } from "framer-motion"
 
 const About = () => {
   return (
     <main className="section container">
-      <section className="about">
+      <motion.section className="about"
+        animate={{ opacity: 1 }}
+        initial={{opacity: 0}}
+        transition={{ delay: 0.3}}
+      >
         <h2 className="section__title">
           About <span>Me</span>
         </h2>
@@ -36,21 +41,39 @@ const About = () => {
             <Stats />
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <div className="separator"></div>
+      <motion.div className="separator"
+        animate={{ opacity: 1 }}
+        initial={{opacity: 0}}
+        transition={{ delay: 0.3}}
+      >
+      </motion.div>
 
-      <section className="skills">
+      <motion.section className="skills"
+        animate={{ opacity: 1 }}
+        initial={{opacity: 0}}
+        transition={{ delay: 0.3}}
+      >
         <h3 className="section__subtitle subtitle__center">My Skills</h3>
 
         <div className="skills__container grid">
           <Skills />
         </div>
-      </section>
+      </motion.section>
 
-      <div className="separator"></div>
+      <motion.div className="separator"
+        animate={{ opacity: 1 }}
+        initial={{opacity: 0}}
+        transition={{ delay: 0.3}}
+      >
+      </motion.div>
 
-      <section className="resume">
+      <motion.section className="resume"
+        animate={{ opacity: 1 }}
+        initial={{opacity: 0}}
+        transition={{ delay: 0.3}}
+      >
       <h3 className="section__subtitle subtitle__center">
         Experience & Education
       </h3>
@@ -76,7 +99,7 @@ const About = () => {
           })}
         </div>
       </div>
-      </section>
+      </motion.section>
     </main>
   )
 }
