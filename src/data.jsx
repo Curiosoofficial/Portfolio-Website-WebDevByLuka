@@ -103,7 +103,7 @@ export const personalInfo = [
   {
     id: 8,
     title: 'Email : ',
-    description: 'contact@stefanovic.com',
+    description: 'contact@webdevbyluka.com',
   },
 
   {
@@ -391,27 +391,27 @@ export const portfolio = [
   {
     id: 6,
     img: Work6,
-    title: 'Photo Editing',
+    title: 'Soon',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'Soon',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'Techstack : ',
+        desc: 'Soon',
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        title: 'Desc: ',
+        desc: 'Soon',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dibble.com',
+        desc: 'Soon',
       },
     ],
   },
