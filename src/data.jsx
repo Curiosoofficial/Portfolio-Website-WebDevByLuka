@@ -9,10 +9,10 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './assets/project1.png';
-import Work2 from './assets/project2.png';
-import Work3 from './assets/project3.png';
-import Work4 from './assets/project-4.jpeg';
+import Work1 from './assets/project-1.jpg';
+import Work2 from './assets/project-2.jpg';
+import Work3 from './assets/project-3.jpg';
+import Work4 from './assets/project-4.jpg';
 import Work5 from './assets/project-5.jpg';
 import Work6 from './assets/project-6.jpg';
 
@@ -367,23 +367,23 @@ export const portfolio = [
   {
     id: 5,
     img: Work5,
-    title: 'Landing Page',
+    title: 'Biserya',
     details: [
       {
         title: 'Project : ',
-        desc: 'Website',
+        desc: 'Biserya',
       },
       {
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'Desc : ',
+        desc: 'E-Commerce Store',
       },
       {
-        title: 'Language : ',
-        desc: 'React JS, Node JS',
+        title: 'Techstack : ',
+        desc: 'Wordpress',
       },
       {
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: '<a href="https://biserya.com/" target="_blank">Click me!</a>',
       },
     ],
   },

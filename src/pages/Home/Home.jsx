@@ -11,7 +11,7 @@ const Home = () => {
   const [text] = useTypewriter({
     words: ['Web Developer', 'Designer', 'Music Producer'],
     loop: 0,
-    delaySpeed: 2000
+    delaySpeed: 2500
   })
 
   return (
