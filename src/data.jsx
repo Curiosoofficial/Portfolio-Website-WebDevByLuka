@@ -331,7 +331,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: '<a href="https://luka-stefanovic.developerakademie.net/join-main/index.html" target="_blank">Click me!</a>',
+        desc: '<a href="https://luka-stefanovic.developerakademie.net/Join-main/index.html" target="_blank">Click me!</a>',
       },
     ],
   },
